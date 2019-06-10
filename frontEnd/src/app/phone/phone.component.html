@@ -1,0 +1,117 @@
+<div class="p-3 mb-2 bg-secondary text-white  ">
+  <div class="container ">
+    <div class="row">
+      <form class="form-inline !important" style="padding-left: 428px;">
+        <input class=" form-control " type="text" [(ngModel)]='search' name="first"
+          placeholder="nhập sản phẩm cần tìm..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    <div style="position: absolute;z-index:34;color:black">
+      <ng-container *ngFor="let i of listSearchPhone">
+        <div style="background: gray; border-bottom:1px solid rgb(99, 88, 88); border-radius: 3px;"
+          routerLink="/detail-phone/{{i._id}}">
+          {{i.phone_name}}
+          <br>
+        </div>
+      </ng-container>
+    </div>
+    <br>
+    <div class="row p-3 mb-2 bg-white text-dark  ">
+      <div class="col-sm-3 card  mt-4 mr-4 ml-5 text-center" *ngFor='let c of dataPhone'>
+        <div class="fs-lapitem">
+
+          <a class="fs-ilap-img" href="" title="{{c.phone_name}}">
+            <p>
+              <img class="lazy" src="{{imageUrl}}/{{c.img}}" alt="#" style=" height: 150px; width: 100px;" />
+            </p>
+          </a>
+
+          <div class="fs-ilap-if">
+            <div class="fs-ilap-itop">
+              <h3 class="fs-ilap-name">
+                <a href="#" title="">{{c.company_name}}</a>
+              </h3>
+              <b>{{c.price_num}}</b>
+              <div class="fs-ilap-price">
+                <p class="fs-ilap-pri"> {{c.price_str}}₫</p>
+              </div>
+            </div>
+
+            <a routerLink="/detail-phone/{{c._id}}"><button type="button"
+                class="btn btn-primary btn-lg btn-block xoagach">Xem</button></a><br>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item btn-outline-primary">
+          <a class="page-link">Back</a>
+        </li>
+        <li class="page-item btn-outline-info">
+          <a class="page-link " aria-label="Next"></a></li>
+        <li class="page-item btn-outline-primary">
+          <a class="page-link">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+</div>
+<router-outlet></router-outlet>
+<!-- <div class="p-3 mb-2 bg-secondary text-white  ">
+    <div class="container ">
+        <br>
+        <div class="row p-3 mb-2 bg-white text-dark  ">
+            <div class="col-sm-3 card  mt-4 mr-4 ml-5 text-center  " *ngFor='let c of dataorder  | paginate: { itemsPerPage: nitem, currentPage: cpage }  '>
+                <div class="fs-lapitem">
+
+                    <a class="fs-ilap-img" href="detel/{{c.id}}" title="{{c.tenmay}}">
+                        <p>
+                            <img class="lazy" src="assets/image/{{c.anh}}" alt="{{c.tenmay}}" style="display: inline;" />
+                        </p>
+                    </a>
+
+                    <div class="fs-ilap-if">
+                        <div class="fs-ilap-itop">
+                            <h3 class="fs-ilap-name">
+                                <a href="detel/{{c.id}}" title="{{c.tenmay}}"></a>
+                            </h3>
+                            <b>{{c.tenmay}}</b>
+                            <div class="fs-ilap-price">
+                                <p class="fs-ilap-pri">{{xuat(c.gia)}} ₫</p>
+                            </div>
+                        </div>
+
+                        <a href="detel/{{c.id}}"><button type="button" class="btn btn-primary btn-lg btn-block xoagach">Xem</button></a><br>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+
+                    <li class="page-item btn-outline-primary">
+                            <a class="page-link" (click)="quaylai(i)">Back</a>
+                        </li>
+                <li class="page-item btn-outline-info" *ngFor="let i of number">
+                    <a class="page-link " (click)="change(i)" outerLink="/product" aria-label="Next" >{{i}}</a></li>
+                <li class="page-item btn-outline-primary">
+                    <a class="page-link" (click)="next(i)">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+    </div>
+
+</div> -->

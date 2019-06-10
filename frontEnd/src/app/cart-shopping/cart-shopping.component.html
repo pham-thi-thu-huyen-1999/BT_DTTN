@@ -1,0 +1,58 @@
+<div class="container">
+  <!-- vùng giủa -->
+  <table id="cart" class="table table-hover table-condensed">
+    <thead>
+      <tr>
+        <th style="width:44%">Tên sản phẩm</th>
+        <th style="width:15%">Giá</th>
+        <th style="width:8%">Số lượng</th>
+        <th style="width:25%" class="text-center">Thành tiền</th>
+        <th style="width:15%"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let c of dataOder'>
+        <td data-th="Product">
+          <div class="row">
+            <div class="col-sm-3 hidden-xs"><img src="assets/image/{{c.anh}}" alt="Sản phẩm 1" class="img-responsive"
+                width="100">
+            </div>
+            <div class="col-sm-8">
+              <br>
+              <h4 class="nomargin">{{c.tenmay}}</h4>
+
+            </div>
+          </div>
+        </td>
+        <td data-th="Price"><br> {{xuat(c.gia)}} đ</td>
+        <td data-th="Quantity">
+          <input class="btn btn-success btn-block mt" type="text" class="form-control" id="validationTooltip05"
+            placeholder="" required value="{{c.soluong}}">
+          <i class="fa fa-plus-square mr-2 mt-1" style="font-size:28px;color:red" (click)='add(c.id)'></i>
+          <i class="fa fa-minus-square ml-1 mt-1" style="font-size:28px;color:blue" (click)='tru(c.id)'></i>
+        </td>
+
+        <td data-th="Subtotal" class="text-center"><br>{{xuat(c.gia*c.soluong)}} đ </td>
+        <td class="actions">
+          <a href="{{c.nhom}}/{{c.id}}">
+            <button class="btn btn-warning btn-sm mr-2 mt-3"> <i class="fa fa-eye"
+                style="font-size:16px;color:black"></i></button>
+          </a>
+          <button class="btn btn-danger btn-sm mr-2 mt-3" (click)='xoa(c.id)'><i class="fa fa-trash-o"></i> </button>
+        </td>
+      </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><a href="index.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+        </td>
+        <td colspan="2" class="hidden-xs"> </td>
+        <td class="hidden-xs text-center"><strong>Tổng tiền {{xuat(total)}} đ</strong>
+        </td>
+        <td><a href="#" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

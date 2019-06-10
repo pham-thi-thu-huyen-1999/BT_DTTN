@@ -1,0 +1,48 @@
+{ 
+    "_id" : "_1", 
+    "phone_name" : "Máy tính bảng iPad Wifi 128 GB (2018)", 
+    "company_name" : "IPad", 
+    "img" : "ipad-1.png", 
+    "price_num" : "10.490.000", 
+    "price_str" : "10.490.000₫"
+}
+{ 
+    "_id" : "_2", 
+    "phone_name" : "Máy tính bảng Samsung Galaxy Tab A 10.1 T515 (2019)", 
+    "company_name" : "IPad-Samsung Galaxy", 
+    "img" : "ipad-2.png", 
+    "price_num" : "7.490.000", 
+    "price_str" : "7.490.000₫"
+}
+{ 
+    "_id" : "_3", 
+    "phone_name" : "Máy tính bảng iPad Mini 7.9 inch Wifi 64GB (2019)", 
+    "company_name" : "IPad", 
+    "img" : "ipad-3.png", 
+    "price_num" : "10.990.000", 
+    "price_str" : "10.990.000₫"
+}
+{ 
+    "_id" : "_4", 
+    "phone_name" : "Máy tính bảng iPad Pro 11 inch Wifi 64GB (2018)", 
+    "company_name" : "IPad", 
+    "img" : "ipad-4.png", 
+    "price_num" : "21.490.000", 
+    "price_str" : "21.490.000₫"
+}
+{ 
+    "_id" : "_5", 
+    "phone_name" : "Máy tính bảng iPad Wifi Cellular 128GB (2018)", 
+    "company_name" : "IPad", 
+    "img" : "ipad-5.png", 
+    "price_num" : "13.490.000", 
+    "price_str" : "13.490.000₫"
+}
+{ 
+    "_id" : "_6", 
+    "phone_name" : "Máy tính bảng iPad Pro 10.5 inch Wifi 64GB (2017)", 
+    "company_name" : "iPad Pro", 
+    "img" : "ipad-6.png", 
+    "price_num" : "16.490.000", 
+    "price_str" : "16.490.000₫"
+}

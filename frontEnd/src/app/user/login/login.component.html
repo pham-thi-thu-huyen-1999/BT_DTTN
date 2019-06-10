@@ -1,0 +1,37 @@
+<div class="maunen justify-center" id='Sign-in-tab'>
+  <div class="container">
+    <div class="maunen" style="width: 600px">
+      <h1 style="height: 100px; text-align: center; padding-top: 25px;">Đăng Nhập</h1>
+      <form style="border:1px solid #ccc" #signinForm='ngForm' (ngSubmit)='onSubmit(email.value, password.value)'>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <label data-error="required field" for="email"><b>Tài khoản Email</b></label>
+              <input class="validate" name='email' type="text" aria-describedby="emailHelp" #email
+                placeholder="Vui lòng nhập tài khoản của bạn" [(ngModel)]="_user.email" required
+                style="border-bottom-color: red">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <label for="psw"><b>Mật khẩu</b></label>
+              <input type="password" name="password" #password [(ngModel)]="_user.password"
+                placeholder="Vui lòng nhập mật khẩu của bạn">
+              <div class="canhphai mt-3"><a href="#">Quên mật khẩu?</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname style="background-color: cyan">
+              <button [disabled]='!signinForm.valid' style="background-color: skyblue" type="button" class="btn btn-warning btn-lg btn-block mt-4"
+                (click)='login()'>Log in</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

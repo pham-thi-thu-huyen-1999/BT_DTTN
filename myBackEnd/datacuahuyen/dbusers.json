@@ -1,0 +1,24 @@
+{ 
+    "_id" : ObjectId("5cf0e82bdd1cb7005b06a349"), 
+    "email" : "anhvu@gmail.com", 
+    "username" : "anh vu vui vẻ ", 
+    "password" : "anhvu123"
+}
+{ 
+    "_id" : ObjectId("5cf8c8f0277e7608883f0e7a"), 
+    "email" : "angle@gmail.com", 
+    "password" : "huyen123", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf8c984277e7608883f0e7b"), 
+    "email" : "angle@gmail.com", 
+    "password" : "huyen123", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf8ca7b277e7608883f0e7c"), 
+    "email" : "angle@gmail.com", 
+    "password" : "123456", 
+    "__v" : NumberInt(0)
+}

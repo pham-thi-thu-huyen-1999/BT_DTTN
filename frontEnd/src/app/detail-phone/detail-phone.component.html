@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="card">
+    <div class="container-fliud mt-3" >
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+          <div class="preview-pic tab-content">
+            <div class="tab-pane active ml-5" id="pic-1">
+              <img src="assets/image/{{dataDetail.img}}" width="400" height="420" />
+            </div>
+
+          </div>
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title"></h3>
+          <div class="rating">
+            <div class="stars"> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span>
+            </div>
+          </div>
+
+          <h4 class="price">{{dataDetail.phone_name}}</h4>
+          <h4 class="price">Giá bán: {{dataDetail.price_num}}đ </h4>
+          <div class="action">
+            <a routerLink="[/cart-shopping, {id:data:id}]" target="_blank">
+              <button type="button" class="btn btn-warning" (click)='add()'>MUA NGAY</button>
+            </a>
+          </div><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="container">
+  <div class="container-fliud mt-3">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="3">
+            <h4>Đánh giá và nhật xét sản phẩm </h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="star text-center">
+
+              <b>5/5</b> <br>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+            </div>
+          </td>
+          <td>
+            <h5 class="text-center"> Gửi nhận xét của bạn</h5>
+            <div class="maunen3">
+              <br>
+              <b class="ml-3">Bạn chấm sản phẩm này bao nhiêu sao?</b><br>
+              <div class="stars">
+                <form action="">
+                  <input class="star star-5" id="star-5" type="radio" name="star" />
+                  <label class="star star-5" for="star-5"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star" />
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star" />
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star" />
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-1" id="star-1" type="radio" name="star" />
+                  <label class="star star-1" for="star-1"></label>
+                </form>
+              </div>
+              <div class="form-group col-md-12">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                  placeholder="Bạn có khuyên người khác mua sản phẩm này không? Tại sao?"></textarea>
+              </div>
+              <b class="ml-3" style="font-size:13px">Một đánh giá có ích thường dài từ 100 ký tự trở lên</b><br>
+              <button type="button" class="btn btn-light  ml-3 mt-2">Hủy</button>
+              <button type="button" class="btn btn-danger  ml-1 mt-2">Gửi</button><br><br>
+
+
+            </div>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

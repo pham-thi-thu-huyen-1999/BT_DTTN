@@ -1,0 +1,94 @@
+<div class="p-3 mb-2 bg-secondary text-white">
+  <div class="container">
+
+    <div class="row">
+      <form class="form-inline !important" style="padding-left: 431px;">
+        <input class=" form-control " type="text" [(ngModel)]='search' name="first"
+          placeholder="nhập sản phẩm cần tìm..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div style="position: absolute;z-index:34;color:black">
+      <ng-container *ngFor="let i of listSearchProduct">
+        <div style="background: gray; border-bottom:1px solid rgb(99, 88, 88); border-radius: 3px;"
+          routerLink="/detail-laptop/{{i._id}}">
+          {{i.phone_name}}
+          <br>
+        </div>
+      </ng-container>
+    </div>
+    <br>
+
+    <div class="grid">
+      <ng-container *ngFor='let c of dataLaptop'>
+        <div class="card card__one">
+          <figure class="card__img">
+            <img class="lazy" src="{{imageUrl}}/{{c.img}}" alt="#" style="height: 200px; width: 250px" />
+          </figure>
+          <a href="#" title="">{{c.company_name}}</a><br>
+          <a href="#" title=""> {{c.price_str}}</a>
+          <a routerLink="/detail-laptop/{{c._id}}"><button type="button"
+              class="btn btn-primary btn-lg btn-block xoagach">Xem</button></a><br>
+        </div>
+
+
+      </ng-container>
+
+
+    </div>
+
+
+    <!-- <div class="grid">
+              <ng-container  *ngFor='let c of dataLaptop'>
+              <div class="card card__one">
+                <figure class="card__img">
+                    <img class="lazy" src="{{imageUrl}}/{{c.img}}" alt="#" style="height: 200px; width: 250px" />
+                </figure>
+                <div class="card__desc">
+                    <div class="fs-ilap-if">
+                        <div class="fs-ilap-itop">
+                          <h3 class="fs-ilap-name">
+                            <a href="#" title="">{{c.company_name}}</a>
+                          </h3>
+                          <b>abc</b>
+                          <div class="fs-ilap-price">
+                            <p class="fs-ilap-pri"> {{c.price_str}}₫</p>
+                          </div>
+                        </div>
+            
+                        <a routerLink='#'><button type="button"
+                            class="btn btn-primary btn-lg btn-block xoagach">Xem</button></a><br>
+            
+                      </div>
+                </div>
+              </div>
+            
+      </ng-container>
+            </div> -->
+
+
+
+
+    <br>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item btn-outline-primary">
+          <a class="page-link">Back</a>
+        </li>
+        <li class="page-item btn-outline-info">
+          <a class="page-link " aria-label="Next"></a></li>
+        <li class="page-item btn-outline-primary">
+          <a class="page-link">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+</div>
+
+
+<router-outlet></router-outlet>

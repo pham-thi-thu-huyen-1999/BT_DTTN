@@ -1,0 +1,77 @@
+<div class="maunen justify-center" id='Sign-in-tab'>
+  <br>
+  <div class="container">
+    <div class="maunen">
+      <div class="row">
+        <div class="col">
+          <h1 style="height: 100px; text-align: center; padding-top: 25px;">Đăng Ký</h1>
+        </div>
+      </div>
+
+      <form style="border:1px solid #ccc" #userSignupForm='ngForm'
+        (ngSubmit)="userSignupForm.valid && onSubmit(userSignupForm)">
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <label data-error="required field" for="email"><b>Email</b></label>
+              <input class="validate" type="email" placeholder="Enter Email" name="email" #email
+                [(ngModel)]='_user.email' required style="border-bottom-color: red">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" fullname>
+              <label for="user_name"><b>User Name</b></label>
+              <input type="text" placeholder="UserName" name="username required" #username
+                [(ngModel)]='_user.username'>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" #password [(ngModel)]='_user.password'
+                required style="border-bottom-color: red" minlength="6">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" fullname>
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="reapeatPassword"
+                [(ngModel)]='_user.reapeatPassword' required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <label for="address"><b>Address</b></label>
+              <input type="text" placeholder="address" name="address" required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" fullname>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" fullname>
+              <button [disabled]='!userSignupForm.valid' type="submit" class="btn btn-primary btn-lg btn-block mt-4">
+                Sign Up</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group" fullname>
+              <button type="button" class="btn btn-danger btn-lg btn-block mt-4">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

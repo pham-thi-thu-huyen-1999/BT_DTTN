@@ -1,0 +1,48 @@
+{ 
+    "_id" : "_1", 
+    "phone_name" : "Laptop Lenovo IdeaPad 330 15IKB i58250U/4GB/1TB/Win10 (81DE024CVN)", 
+    "company_name" : "Lenovo", 
+    "img" : "lenovo-1.jpg", 
+    "price_num" : NumberInt(11990000), 
+    "price_str" : "11.990.000đ"
+}
+{ 
+    "_id" : "_2", 
+    "phone_name" : "Laptop Apple Macbook Air 2018 i5/8GB/128GB (MREE2SA/A)", 
+    "company_name" : "Apple", 
+    "img" : "apple-1.jpg", 
+    "price_num" : NumberInt(31490000), 
+    "price_str" : "31.490.000đ"
+}
+{ 
+    "_id" : "_3", 
+    "phone_name" : "Laptop Asus VivoBook X507UF 8250U/4GB/1TB/MX130/Win1 (EJ121T)", 
+    "company_name" : "Asus", 
+    "img" : "asus-1.jpg", 
+    "price_num" : NumberInt(14290000), 
+    "price_str" : "14.290.000đ"
+}
+{ 
+    "_id" : "_4", 
+    "phone_name" : "Laptop Acer Aspire E5 476 i3 8130U/4GB/500GB/Win10 (NX.GWTSV.002)", 
+    "company_name" : "Acer", 
+    "img" : "acer-1.jpg", 
+    "price_num" : NumberInt(9290000), 
+    "price_str" : "9.290.000"
+}
+{ 
+    "_id" : "_5", 
+    "phone_name" : "Laptop Dell Inspiron 3576 i5 8250U/4GB/1TB/2GB AMD 520/Win10/(70157552)", 
+    "company_name" : "Asus", 
+    "img" : "dell-1.jpg", 
+    "price_num" : NumberInt(15490000), 
+    "price_str" : "15.490.000₫"
+}
+{ 
+    "_id" : "_6", 
+    "phone_name" : "Laptop Acer Aspire E5 476 i3 8130U/4GB/500GB/Win10 (NX.GWTSV.002)", 
+    "company_name" : "Acer", 
+    "img" : "acer-2.jpg", 
+    "price_num" : NumberInt(9490000), 
+    "price_str" : "9.490.000₫"
+}
